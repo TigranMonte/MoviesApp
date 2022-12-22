@@ -16,6 +16,7 @@ sealed class Screens(val route: String) {
     object Main: Screens(route = Constants.Screens.MAIN_SCREEN)
     object Details: Screens(route = Constants.Screens.DETAILS_SCREEN)
 }
+
 @Composable
 fun SetupNavHost(navController: NavHostController, viewModel: MainViewModel) {
     NavHost(
