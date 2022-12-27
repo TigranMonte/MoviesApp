@@ -17,7 +17,6 @@ class MainViewModel @Inject constructor(private val repository: ApiRepository) :
     private val _allMovies = MutableLiveData<List<Movies>>()
     val allMovies: LiveData<List<Movies>>
         get() = _allMovies
-
     // получить список всех фильмов из репозитория
     fun getAllMovies() {
         viewModelScope.launch {
