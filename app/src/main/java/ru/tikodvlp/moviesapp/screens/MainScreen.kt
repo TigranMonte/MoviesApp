@@ -38,6 +38,7 @@ fun MainScreen(navController: NavController, viewModel: MainViewModel) {
         }
     }
 }
+
 @OptIn(ExperimentalCoilApi::class)
 @Composable
 fun MovieItem(item: Movies, navController: NavController) {
